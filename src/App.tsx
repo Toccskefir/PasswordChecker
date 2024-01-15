@@ -10,6 +10,11 @@ function App() {
   return <div>
     <header>
       <h1>Jelszó biztonság ellenőrzés</h1>
+      <ul>
+        <li style={{color: 'red'}}>Gyenge: 8 karakternél rövidebb</li>
+        <li style={{color: 'orange'}}>Közepes: 8 karakternél hosszabb, de csak betűket tartalmaz</li>
+        <li style={{color: 'green'}}>Erős: 8 karakternél hosszabb és nem csak betűket tartalmaz</li>
+      </ul>
     </header>
     <main>
       <input type="password" onInput={e => {setPassword(e.currentTarget.value)}}/>
