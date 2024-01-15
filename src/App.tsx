@@ -7,7 +7,7 @@ import { PasswordChecker } from './PasswordChecker'
 function App() {
   const [password, setPassword] = useState('');
 
-  return <div>
+  return <>
     <header>
       <h1>Jelszó biztonság ellenőrzés</h1>
       <ul>
@@ -24,7 +24,7 @@ function App() {
       <p>Tóth Kevin</p>
       <p>2024.01.15.</p>
     </footer>
-  </div>
+  </>
 }
 
 export default App
